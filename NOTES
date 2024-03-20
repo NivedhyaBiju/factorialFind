@@ -1,0 +1,16 @@
+DOM - Document object model
+---------------------------
+1. What is the use of DOM in JavaScript?
+   DOM stands for Document Object Model. 
+   It is a programming interface that allows us to create, change, or remove elements from the document. 
+   We can also add events to these elements to make our page more dynamic. 
+   The DOM views an HTML document as a tree of nodes.
+
+DOM METHODS
+-----------
+1. document.getelementsByTagname('tagname')
+2. document.getElementById('id')
+3. document.getElementByClass('class')
+4. document.querySelector('#id/.classname/tagname') ------- get one element
+5. document.querySelectorAll('#id/.classname/tagname') ---- get collection of elements
+   

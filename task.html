@@ -11,29 +11,20 @@
     <div class="container border bg-light w-50 p-3 text-center mt-5">
         <h1>Find the Factorial</h1>
         <input id="factorial" type="text" class="form-control" placeholder="Enter the number">
-        <button onclick="factorialCheck()" class="check btn-info mt-3">Check</button>
+        <button onclick="factorialCheck()" class="check btn-info mt-3">Get Result</button>
+        <div id="result" class="mt-3"></div>
     </div>
 </body>
 <script>
-    function factorialCheck(){
-        var data=document.querySelector('factorial')
-        var num=6
-        var fact=1
-        if(num>0){
-        fact*=num
-        num--
-        alert("factorial")
-        }
-        else{
-            alert("not factorial")
-        }
+function factorialCheck(){
+    const numberInput = document.getElementById('factorial').value;
+    const resultDiv = document.getElementById('result');
+    const num = parseInt(numberInput);
+    let factorial = 1;
+    for (let i = 2; i <= num; i++) {
+      factorial *= i;
     }
+    resultDiv.innerHTML = `<div class="alert alert-success" role="alert">Factorial of ${num} is ${factorial}</div>`;
+  }
 </script>
 </html>
-
-<!-- // var num=6
-// var fact=1
-// while(num>0){
-//     fact*=num
-//     num--
-// }console.log(fact); -->
